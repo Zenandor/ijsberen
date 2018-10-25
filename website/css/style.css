@@ -1,24 +1,29 @@
-/* Nav*/
-
-#navDesk{
-	display: none;
+/* Fonts */
+* {
+    font-family: "Poppins";
 }
 
-.openNav{
-	position: fixed;
-	top: 15px;
-	right: 15px;
-	z-index: 1;
+/* Nav*/
+
+#navDesk {
+    display: none;
+}
+
+.openNav {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
 }
 
 .nav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: ;
     top: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -35,213 +40,226 @@
 
 }
 
-.links{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
-.bar{
-	width: 20px;
-	height: 3px;
-	background-color: black;
-	margin-bottom: 3px;
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
 }
 
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-5px, 4px);
     transform: rotate(-45deg) translate(-5px, 4px);
-	background-color: white;
+    background-color: white;
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-5px, -5px);
     transform: rotate(45deg) translate(-5px, -5px);
-	background-color: white;
+    background-color: white;
 }
 
 /* Algemeen*/
 
-section{
-	padding: 1%;
-	padding-top: 5%;
-	box-sizing: border-box;
+section {
+    padding: 1%;
+    padding-top: 5%;
+    box-sizing: border-box;
 }
 
-h1{
-	font-size: 2em;
+h1 {
+    font-family: "Caveat";
+    font-size: 2em;
 }
 
-h2{
-	font-size: 1.5em;
+h2 {
+    font-family: "Poppins";
+    font-size: 1.5em;
 }
 
 /* Start*/
 
-#home{
-	display: table-cell;
-	width: 100vw;
-	height: 100vh;
-	vertical-align: middle;
-	text-align: center;
+#home {
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    text-align: center;
 }
 
-#home h1{
-	text-align: center;
-	font-size: 3em;
+#home h1 {
+    text-align: center;
+    font-size: 3em;
 }
 
 /* Over ons*/
 
-#about{
-	width: 100%;
-	text-align: center;
+#about {
+    width: 100%;
+    text-align: center;
 }
 
-.brand-value{
-	display: inline-block;
-	width: 50%;
-	height: 500px;
-	margin: 5% 3em	;
-	border: 2px solid black;
-	text-align: center;
-	vertical-align: top;
+.brand-value {
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    margin: 5% 3em;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: top;
 }
 
-.brand-image-wrapper{
-	display: inline-block;
-	width: 50%;
-	border: 2px solid black;
-	margin: 5% 0;
+.brand-image-wrapper {
+    display: inline-block;
+    width: 50%;
+    border: 2px solid black;
+    margin: 5% 0;
 }
 
-.img-inner{
-	padding: 50% 0;
+.img-inner {
+    padding: 50% 0;
 }
 
-#about div h2{
-	text-align: center;
+#about div h2 {
+    text-align: center;
 }
 
-#about div p{
-	text-align: left;
-	margin: 1em 0.5em;
+#about div p {
+    text-align: left;
+    margin: 1em 0.5em;
 }
 
 
 /*Merch */
-#merch{
-	text-align: center;
-	height: 100vh;
+#merch {
+    text-align: center;
+    height: 100vh;
 }
 
-.merch-wrapper{
-	display: inline-block;
-	width: 200px;
-	height: 200px;
-	border: 2px solid black;
-	padding: 0;
-	margin: 3%;
+.merch-wrapper {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 0;
+    margin: 3%;
 }
 
 /* Footer*/
 
-footer{
-	height: 25px;
-	width: 100vw;
-	background-color: rgba(0,0,0,0.75);
-	color: white;
-	margin-left: -1%;
-	margin-top: 1%;
+footer {
+    font-family: "Caveat";
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
 }
 
-footer p{
-	display: inline-block;
-	font-size: 0.8em;
+footer p {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+
 }
 
-.email{
-	text-align: left;
+.email {
+    text-align: left;
 }
 
-.copyright{
-	text-align: center;
+.copyright {
+    text-align: center;
 }
 
 
-@media (min-width: 750px){
+/* MOBILE */
 
-	/* Algemeen*/
+@media (min-width: 750px) {
 
-	section{
-		height: 100vh;
-	}
+    /* Algemeen*/
 
-	/* Nav*/
+    section {
+        height: 100vh;
+    }
 
-	.nav-mobile{
-		display: none;
-	}
+    /* Nav*/
 
-	.openNav{
-		display: none;
-	}
+    .nav-mobile {
+        font-family: "Poppins";
+        display: none;
+    }
 
-	#navDesk{
-		display: table-cell;
-		position: fixed;
-		width: 100vw;
-		height: 5vh;
-		text-align: right;
-		vertical-align: middle;
-		background-color: black;
-		opacity: 0.5;
-	}
+    .openNav {
+        display: none;
+    }
 
-	#navDesk a{
-		display: inline-block;
-		margin-right: 1%;
-		color: white;
-		text-decoration: none;
-	}
+    #navDesk {
+        display: table-cell;
+        position: fixed;
+        width: 100%;
+        height: 5vh;
+        text-align: right;
+        vertical-align: middle;
+        background-color: grey;
+    }
 
-	/* Over ons*/
+    #navDesk a {
+        font-family: "Caveat";
+        display: inline-block;
+        margin-right: 1%;
+        color: white;
+        text-decoration: none;
+        margin-top: 15px;
+        padding-right: 1%;
+        font-size: 22px;
+    }
 
-	.brand-value{
-		width: 20%;
-	}
+    /* Over ons*/
 
-	/* Merch*/
+    .brand-value {
+        width: 20%;
+    }
 
-	.hoverMerch{
-	margin: 0;
-	width: 200px;
-	height: 200px;
-	opacity: 0;
-	background-color: rgba(0,0,0,0.75);
-	text-align: center;
-		
-	}
+    /* Merch*/
 
-	.hoverMerch:hover{
-		opacity: 1;
-	}
+    .hoverMerch {
+        font-family: "Poppins";
+        margin: 0;
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        text-align: center;
 
-	.merch-text-wrapper{
-		display: inline-block;
-		width: 150px;
-		max-height: 20px;
-		margin: auto;
-		color: white;
-		margin-top: 80px;
-	}
+    }
 
-	.merch-text-wrapper p{
-		margin-bottom: 5%;
-	}
+    .hoverMerch:hover {
+        opacity: 1;
+    }
+
+    .merch-text-wrapper {
+        display: inline-block;
+        width: 150px;
+        max-height: 20px;
+        margin: auto;
+        color: white;
+        margin-top: 80px;
+    }
+
+    .merch-text-wrapper p {
+        margin-bottom: 5%;
+    }
 }
-
