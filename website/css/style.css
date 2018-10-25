@@ -1,0 +1,243 @@
+/* Nav*/
+
+#navDesk{
+	display: none;
+}
+
+.openNav{
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	z-index: 1;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.nav a {
+    padding: 4px 16px 4px 4px;
+    text-decoration: none;
+    font-size: 1.5em;
+    max-width: 100%;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.links{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.bar{
+	width: 20px;
+	height: 3px;
+	background-color: black;
+	margin-bottom: 3px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+	background-color: white;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+	background-color: white;
+}
+
+/* Algemeen*/
+
+section{
+	padding: 1%;
+	padding-top: 5%;
+	box-sizing: border-box;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+/* Start*/
+
+#home{
+	display: table-cell;
+	width: 100vw;
+	height: 100vh;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#home h1{
+	text-align: center;
+	font-size: 3em;
+}
+
+/* Over ons*/
+
+#about{
+	width: 100%;
+	text-align: center;
+}
+
+.brand-value{
+	display: inline-block;
+	width: 50%;
+	height: 500px;
+	margin: 5% 3em	;
+	border: 2px solid black;
+	text-align: center;
+	vertical-align: top;
+}
+
+.brand-image-wrapper{
+	display: inline-block;
+	width: 50%;
+	border: 2px solid black;
+	margin: 5% 0;
+}
+
+.img-inner{
+	padding: 50% 0;
+}
+
+#about div h2{
+	text-align: center;
+}
+
+#about div p{
+	text-align: left;
+	margin: 1em 0.5em;
+}
+
+
+/*Merch */
+#merch{
+	text-align: center;
+	height: 100vh;
+}
+
+.merch-wrapper{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	padding: 0;
+	margin: 3%;
+}
+
+
+
+footer{
+	height: 25px;
+	width: 100vw;
+	background-color: rgba(0,0,0,0.75);
+	color: white;
+	margin-left: -1%;
+	margin-top: 1%;
+}
+
+footer p{
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+.copyright{
+	text-align: center;
+}
+
+
+@media (min-width: 750px){
+
+	/* Algemeen*/
+
+	section{
+		height: 100vh;
+	}
+
+	/* Nav*/
+
+	.nav-mobile{
+		display: none;
+	}
+
+	.openNav{
+		display: none;
+	}
+
+	#navDesk{
+		display: table-cell;
+		position: fixed;
+		width: 100vw;
+		height: 5vh;
+		text-align: right;
+		vertical-align: middle;
+		background-color: black;
+		opacity: 0.5;
+	}
+
+	#navDesk a{
+		display: inline-block;
+		margin-right: 1%;
+		color: white;
+		text-decoration: none;
+	}
+
+	/* Over ons*/
+
+	.brand-value{
+		width: 20%;
+	}
+
+	/* Merch*/
+
+	.hoverMerch{
+	margin: 0;
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.75);
+	text-align: center;
+		
+	}
+
+	.hoverMerch:hover{
+		opacity: 1;
+	}
+
+	.merch-text-wrapper{
+		display: inline-block;
+		width: 150px;
+		max-height: 20px;
+		margin: auto;
+		color: white;
+		margin-top: 80px;
+	}
+
+	.merch-text-wrapper p{
+		margin-bottom: 5%;
+	}
+}
+
