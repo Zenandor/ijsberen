@@ -148,7 +148,7 @@ h2{
 	margin: 3%;
 }
 
-
+/* Footer*/
 
 footer{
 	height: 25px;
@@ -162,6 +162,10 @@ footer{
 footer p{
 	display: inline-block;
 	font-size: 0.8em;
+}
+
+.email{
+	text-align: left;
 }
 
 .copyright{
